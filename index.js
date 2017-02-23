@@ -1,4 +1,4 @@
-module.exports = function () {
+module.exports = function browserLocale () {
   var lang
 
   if (navigator.languages && navigator.languages.length) {
