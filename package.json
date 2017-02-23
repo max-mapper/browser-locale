@@ -1,7 +1,7 @@
 {
   "name": "browser-locale",
   "version": "1.0.0",
-  "description": "get the users selected language locale from the navigator object from client-side js",
+  "description": "get the user's selected language locale from the navigator object from client-side js",
   "main": "index.js",
   "keywords": [
     "locale",
@@ -9,12 +9,5 @@
   ],
   "author": "max ogden",
   "license": "BSD",
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/maxogden/browser-locale.git"
-  },
-  "bugs": {
-    "url": "https://github.com/maxogden/browser-locale/issues"
-  },
-  "homepage": "https://github.com/maxogden/browser-locale"
+  "repository": "https://github.com/maxogden/browser-locale"
 }
