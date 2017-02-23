@@ -1,6 +1,6 @@
 {
   "name": "browser-locale",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "get the user's selected language locale from the navigator object from client-side js",
   "main": "index.js",
   "keywords": [
