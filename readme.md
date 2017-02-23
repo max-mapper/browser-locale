@@ -22,3 +22,12 @@ use [browserify](http://browserify.org) or [browserify-cdn](http://wzrd.in) to p
 var locale = require('browser-locale')()
 // locale will be e.g. en-US or undefined if it could not be detected (e.g. you are in a super weird browser)
 ```
+
+## tips
+
+Not all browsers are consistent in their capitalization of language tags,
+e.g. `en-US` vs `en-us`. Keep this in mind when looking for matches in locale
+strings.
+
+See also [locale2](https://github.com/moimikey/locale2), an alternative module
+for detecting a user's locale.
