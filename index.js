@@ -1,16 +1,19 @@
 module.exports = function browserLocale () {
-  var lang
+  var lang;
 
-  if (navigator.languages && navigator.languages.length) {
-    // latest versions of Chrome and Firefox set this correctly
-    lang = navigator.languages[0]
-  } else if (navigator.userLanguage) {
+  if (navigator.userLanguage) {
     // IE only
-    lang = navigator.userLanguage
-  } else {
-    // latest versions of Chrome, Firefox, and Safari set this correctly
-    lang = navigator.language
+    lang = navigator.userLanguage;
+  } else if (navigator.language) {
+    // latest versions of Chrome, Firefox, Edge and Safari set this correctly
+    lang = navigator.language;
+  } else if (navigator.languages && navigator.languages.length) {
+    // latest versions of Chrome and Firefox set this correctly
+    lang = navigator.languages[0];
+  } else if (navigator.browserLanguage) {
+    // used by Edge
+    lang = navigator.browserLanguage;
   }
 
-  return lang
+  return lang;
 }
