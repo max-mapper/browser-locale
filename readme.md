@@ -29,5 +29,5 @@ Not all browsers are consistent in their capitalization of language tags,
 e.g. `en-US` vs `en-us`. Keep this in mind when looking for matches in locale
 strings.
 
-See also [locale2](https://github.com/moimikey/locale2), an alternative module
+See also [get-user-locale](https://www.npmjs.com/package/get-user-locale), an alternative module
 for detecting a user's locale.
